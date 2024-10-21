@@ -24,8 +24,14 @@ const FileInput = () => {
         id='file-input'
         name='file'
         onChange={handleFileChange}
+        className='hidden'
       />
-      {/* <label htmlFor='file-input'></label> */}
+      <label
+        htmlFor='file-input'
+        className='cursor-pointer border rounded-md px-4 py-3'
+      >
+        Upload Files
+      </label>
     </div>
   )
 }

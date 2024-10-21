@@ -1,7 +1,6 @@
 import  { useEffect, useState } from 'react'
 import useDocuments from '../hooks/useDocuments'
 import EpubReader from './EpubReader';
-import PdfReader from './PdfReader';
 
 const FileRenderer = () => {
   const { file } = useDocuments();
@@ -32,19 +31,7 @@ const FileRenderer = () => {
 			}
 		}, [file]);
 
-  if (file.type === "pdf") {
-    return (
-			<div>
-				<PdfReader />
-      </div>
-    )
-  };
-
-  return (
-		<div>
-			<EpubReader url={fileUrl} />
-		</div>
-	);
+  return <EpubReader url={fileUrl} />
 }
 
 export default FileRenderer
