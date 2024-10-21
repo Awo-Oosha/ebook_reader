@@ -30,7 +30,7 @@ const Header = () => {
   }
 
   return (
-    <header className='w-full flex items-center justify-between px-5 py-2.5 border-2'>
+    <header className='w-full flex items-center justify-between px-5 py-2.5'>
       <FileInput />
       <BaseDropdown
         toggleHandler="Select a file"

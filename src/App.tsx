@@ -6,16 +6,8 @@ import Header from './components/Header/Header';
 
 const App = () => {
   return (
-    <div className='w-full h-[100dvh] flex flex-col border-2 border-blue-900'>
+    <div className='w-full h-[100dvh] flex flex-col'>
       <Header />
-      {/*
-
-      <div>
-        {files && files.map((file, idx) => (
-          <p key={idx} onClick={() => handleSelectFile(file)}>{ file.name }</p>
-        ))}
-      </div> */}
-      
       <FileRenderer />
     </div>
   )
